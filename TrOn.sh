@@ -3,7 +3,7 @@ THIS_DIR=$(cd $(dirname $0); pwd)
 Version=`lsb_release -rs | cut -f1 -d"."`
 install() {
 echo -e "\033[0;36m"
-echo -e "~ Welcome To Source David - اهلا بك في سورس ديفد ~"
+echo -e "~ Welcome To Source TrOn - اهلا بك في سورس ترون ~"
 echo -e "     ~ { Setting Up Offices - جاري رفع المكاتب } ~"
 echo -e "\033[0m"
 sudo apt-get update -y
@@ -43,20 +43,10 @@ sudo luarocks install luautf8
 cd .. ;sudo rm -rf luarocks*
 sudo timedatectl set-timezone Asia/Baghdad
 echo -e "\033[0;36m"
-echo -e "---------------------------------------------"                                       
-echo -e "|        ____              _   _            |"
-echo -e "|       |  _ \  ___ _    _(_) | |_          |"
-echo -e "|       | | | |/ _ \ \  / / |/ _  |         |" 
-echo -e "|       | |_| | (_| |\ V /| | (_| |         |"
-echo -e "|       |____/ \__,_| \_/ |_|\__,_|         |"
-echo -e "|-------------------------------------------|"
-echo -e "| This Source Was Developed By (Rio) @W5555.|"
-echo -e "|   This Is The Source Channel @L9L9L .     |"
-echo -e "|                - David -                  |"
-echo -e "---------------------------------------------"
+echo -e "SoUrCe TrOn"
 echo -e "\033[0m"
 cd $THIS_DIR && sudo chmod +x tg
-lua David.lua
+lua TrOn.lua
 }
 if [ "$1" = "install" ]; then
 install
@@ -66,5 +56,5 @@ echo -e "\033[0;31m\n~ The tg File Was Not Found In The Bot Files\n\033[0;33m"
 exit 1
 fi
 cd $THIS_DIR && sudo chmod +x tg
-lua David.lua
+lua TrOn.lua
 fi
